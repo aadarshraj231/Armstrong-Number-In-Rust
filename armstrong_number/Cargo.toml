@@ -1,5 +1,5 @@
 [package]
-name = "hello_world"
+name = "armstrong_numbers"
 version = "0.1.0"
 authors = ["aadarshraj231 <aadarshraj09890@gmail.com>"]
 edition = "2018"
