@@ -1,13 +1,11 @@
-pub fn main(num: u32) -> bool {
+pub fn is_armstrong_number(num: u32) -> bool {
     let mut digits = Vec::new();
-    let mut num2 = num;
-    let mut i = 0;
-
-    while num2 > 0 {
-        digits.push(num2 % 10);
-        num2 /= 10;
-        i += 1;
+    let mut remainer = num;
+    let mut lenth = 0;
+    while remainer > 0 {
+        digits.push(remainer % 10);
+        remainer /= 10;
+        lenth += 1;
     }
-
-    digits.iter().map(|x| x.pow(i)).sum::<u32>() == num
+    num == digits.iter().map(|d| d.pow(lenth)).sum()
 }
